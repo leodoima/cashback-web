@@ -8,9 +8,10 @@ import { Link, useHistory } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
-import logoImg from '../../assets/logo.svg';
+import movaImg from '../../assets/mova-black.svg';
+import logoMova from '../../assets/logo-mova.svg';
 
-import { Container, Content, AnimationContainer, Description } from './styles';
+import { Container, Content, AnimationContainer, Description, Menu, Text } from './styles';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -70,12 +71,33 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <Description>
-        <h1>Rede de descontos e cashback</h1>
-        <p>O comércio local fortalecido e oferecendo vantagens ao seu cliente</p>
+        <Menu>
+          <img src={logoMova} alt=""/>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Sobre</li>
+              <li>Contato</li>
+            </ul>
+          </nav>
+        </Menu>
+
+        <Text>
+         <h1>Rede de descontos e cashback</h1>
+         <p>O comércio local fortalecido e fornecendo vantagens à seus clientes</p>
+        </Text>
+
+      
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      
       </Description>
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="GoBarber" />
+          <img src={movaImg} alt="GoBarber" />
 
           <Form ref={formRef} onSubmit={handleSubmit}>
 

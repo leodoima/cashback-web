@@ -3,31 +3,78 @@ import { shade } from 'polished';
 
 export const Container = styled.div`
   height: 100vh;
-  display: flex;
-
-  align-items: stretch;
+  display: flex; 
 `;
 
 export const Description = styled.div`   
   display: flex;
   flex-direction: column;
- 
-  margin-left: 70px;
+  padding: 80px;
+
+  height: 100%;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  > ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background: #091929;
+    margin-left: 15px;
+  }
+`;
+
+export const Menu = styled.div` 
+  display: flex;
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    font-size: 22px;
+    font-weight: 900;
+    opacity: 0.6;
+    margin-left: 100px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${shade(0.2, '#53D3D1')};
+    }
+  }
+
+  nav ul li:first-child {
+    opacity: 1;
+  }
+`;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   h1{
     max-width: 550px;
+
     font-size: 110px;
+    font-weight: 900;
     line-height: 110px;
     letter-spacing: -3.5px;
   }
 
-  p {
-    font-size: 25px;
-    line-height: 32px;
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    opacity: 0.6;
 
-    color: #091929;
-    mix-blend-mode: normal;
-    opacity: 0.5;
     margin-top: 50px;
   }
 `;
@@ -61,25 +108,19 @@ export const AnimationContainer = styled.div`
   animation: ${appearFromLeft} 1s;
 
   display: flex;
-  flex-direction: column;
-  place-content: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   background: #fff;
-  width: 500px;
-  height: 600px;
+  width: 450px;
+  height: 550px;
 
   margin-right: 500px;
   border-radius: 15px;
- 
-  img {
-    width: 265px;
-    height: 102px;
-  }
 
   form {
-    margin: 80px 0;
+    margin: 65px 0;
     width: 340px;
     text-align: center;
 

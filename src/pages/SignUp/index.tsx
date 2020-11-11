@@ -11,7 +11,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { useToast } from '../../hooks/toast';
-import logoImg from '../../assets/logo.svg';
+import movaImg from '../../assets/mova-black.svg';
 
 interface SignUpFormData {
   name: string;
@@ -74,7 +74,7 @@ const SignUp: React.FC = () => {
 
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="GoBarber" />
+          <img src={movaImg} alt="GoBarber" />
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu cadastro</h1>
             <Input name="name" icon={FiUser} placeholder="Nome" />
