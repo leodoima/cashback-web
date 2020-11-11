@@ -83,8 +83,8 @@ const SignIn: React.FC = () => {
         </Menu>
 
         <Text>
-         <h1>Rede de descontos e cashback</h1>
-         <p>O comércio local fortalecido e fornecendo vantagens à seus clientes</p>
+          <h1>Rede de descontos e cashback</h1>
+          <p>O comércio local fortalecido e fornecendo vantagens à seus clientes</p>
         </Text>
 
       
@@ -114,13 +114,12 @@ const SignIn: React.FC = () => {
 
             <Link to="/signup">Esqueci minha senha</Link>
           </Form>
-          <Link to="/signup">
+          <Link to="/">
             <FiLogIn />
             Criar conta
           </Link>
         </AnimationContainer>
       </Content>
-      
     </Container>
   );
 };

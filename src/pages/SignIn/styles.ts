@@ -64,7 +64,7 @@ export const Text = styled.div`
     max-width: 550px;
 
     font-size: 110px;
-    font-weight: 900;
+    font-weight: bold;
     line-height: 110px;
     letter-spacing: -3.5px;
   }
