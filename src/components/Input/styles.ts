@@ -27,20 +27,21 @@ export const Container = styled.div<ContainerProps>`
   ${props =>
     props.isErrored &&
     css`
-      border: 2px solid #c53030;
+      //border: 2px solid #c53030;
+      color: #ED8975 !important;
     `}
 
   ${props =>
     props.isFocused &&
     css`
-      border: 2px solid #ff9000;
-      color: #ff9000;
+      //border: 2px solid #ED8975;
+      color: #53D3D1;
     `}
 
   ${props =>
     props.isFilled &&
     css`
-      color: #ff9000;
+      color: #53D3D1;
     `}
 
   input {
