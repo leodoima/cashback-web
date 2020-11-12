@@ -1,5 +1,5 @@
 # cashback-web
-Aplicação de reservas para serviços de barbearia desenvolvido em ReactJS
+Sistema de descontos e cashback em compras no comércio local
 
 <h1>
   <img src="/assets/Home-Mova.png" />
