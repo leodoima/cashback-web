@@ -1,25 +1,23 @@
 import React from 'react';
-import { FiHome, FiActivity, FiCreditCard, FiRepeat,FiUsers, FiLogOut, FiFileText, FiShoppingCart } from 'react-icons/fi';
 
-import { Container, Menu, Content } from './styles';
-import logoMova from '../../assets/logo.svg';
+import Desktop from '../../components/Desktop';
+import numberUsers from '../../assets/temp/NumberUsers.svg';
+import numberCompanies from '../../assets/temp/NumberCompanies.svg';
+import numberTransactions from '../../assets/temp/NumberTransactions.svg';
+import numberValue from '../../assets/temp/NumberValue.svg';
+
+import {Top} from './styles';
 
 const Dashboard: React.FC = () => {
   return (
-    <Container>
-      <Menu>
-        <img src={logoMova} alt=""/>
-        <FiHome />
-        <FiActivity />
-        <FiCreditCard />
-        <FiRepeat />
-        <FiFileText />
-        <FiUsers />
-        <FiShoppingCart />
-        <FiLogOut />
-      </Menu>
-      <Content></Content>
-    </Container>
+      <Desktop>
+        <Top>
+          <img src={numberUsers} alt=""/>
+          <img src={numberCompanies} alt=""/>
+          <img src={numberTransactions} alt=""/>
+          <img src={numberValue} alt=""/>
+        </Top>
+      </Desktop>
   );
 }
 
