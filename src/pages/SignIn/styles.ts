@@ -140,23 +140,6 @@ export const AnimationContainer = styled.div`
       }
     }
 
-    button {
-      background: #53D3D1;
-      border-radius: 10px;
-      border: 0;
-      height: 56px;
-      padding: 0 16px;
-      color: #fff;
-      width: 100%;
-      font-weight: 500;
-      margin-top: 16px;
-      transition: background-color 0.2s;
-
-      &:hover {
-        background: ${shade(0.2, '#53D3D1')};
-      }
-    }
-
     a {
       color: #091929;
       display: block;

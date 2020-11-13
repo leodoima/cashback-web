@@ -8,7 +8,7 @@ export const Top = styled.div`
   flex-wrap: wrap;
 
   img {
-    width: 385px;
+    max-width: 385px;
     height: 165px;
   }
 `;
